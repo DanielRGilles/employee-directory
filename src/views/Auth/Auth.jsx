@@ -22,7 +22,7 @@ export default function Auth({ isSigningUp = false }) {
           setUser({id: user.id, email: user.email });
         }
         // If signing up: redirect to /confirm-email
-        const redirecting = isSigningUp ? '/welcome' : '/directory';
+        const redirecting = isSigningUp ? '/welcome' : '/profile';
         history.replace(redirecting)
       // Use the corresponding functions from `/services/users` for both cases
     } catch (error) {
