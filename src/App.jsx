@@ -5,6 +5,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import { UserProvider } from './context/UserContext';
 import Auth from './views/Auth/Auth';
 import Home from './views/Home/Home';
+import Profile from './views/Profile/Profile';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
                 <Auth isSigningUp />
               </Route>
               <PrivateRoute path="/profile">
+                <Profile/>
               </PrivateRoute>
               <PrivateRoute exact path="/profile/:id">
               </PrivateRoute>

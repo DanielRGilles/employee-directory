@@ -21,7 +21,7 @@ export default function Auth({ isSigningUp = false }) {
           const user = await signInUser(email, password);
           setUser({id: user.id, email: user.email });
         }
-        // If signing up: redirect to /confirm-email
+        // If signing up: redirect to /welcome
         const redirecting = isSigningUp ? '/welcome' : '/profile';
         history.replace(redirecting)
       // Use the corresponding functions from `/services/users` for both cases
