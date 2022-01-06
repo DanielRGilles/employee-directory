@@ -5,7 +5,7 @@ export default function Header() {
     const { user } = useUser();
     return (
         <header className='top-nav'>
-            <div>Employee Directory</div>
+            <div>Acme Inc. </div>
             <div>Image of something</div>
             <div>{user.email ? user.email : 'Friend'}</div>
         </header>

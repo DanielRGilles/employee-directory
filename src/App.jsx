@@ -26,7 +26,8 @@ export default function App() {
               <PrivateRoute path="/profile">
                 <Profile/>
               </PrivateRoute>
-              <PrivateRoute exact path="/profile/:id">
+              <PrivateRoute  path="/profile/edit">
+                <EditProfile/>
               </PrivateRoute>
              
             </Switch>
