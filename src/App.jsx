@@ -1,11 +1,12 @@
 import React from 'react'
-import { Route, Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import { UserProvider } from './context/UserContext';
 import Auth from './views/Auth/Auth';
 import Home from './views/Home/Home';
 import Profile from './views/Profile/Profile';
+import styles from './App.css';
 
 export default function App() {
   return (
@@ -26,10 +27,10 @@ export default function App() {
               <PrivateRoute path="/profile">
                 <Profile/>
               </PrivateRoute>
-              <PrivateRoute  path="/profile/edit">
-                <EditProfile/>
-              </PrivateRoute>
-             
+              {/* <  path="/profile/edit">
+                {/* <EditProfile/> */}
+              
+            
             </Switch>
           </main>
         </Router>

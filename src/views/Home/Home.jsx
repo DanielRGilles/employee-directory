@@ -2,7 +2,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { useUser } from '../../context/UserContext';
 import styles from './Home.css';
 
-import phone  from '../../assets/images/phone.png';
+import phone  from '../../assets/phone.png';
 
 export default function Home() {
   const auth = useUser();

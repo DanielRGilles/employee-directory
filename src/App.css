@@ -5,10 +5,7 @@
   --off-white: rgb(234, 234, 234);
 }
 
-@font-face {
-  font-family: ProximaNova;
-  src: url('assets/fonts/ProximaNova.otf') format('opentype');
-}
+
 
 body {
   background-color: var(--off-white);

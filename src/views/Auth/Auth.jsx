@@ -7,7 +7,7 @@ import { signInUser, signUpUser } from '../../services/users';
 import styles from './Auth.css';
 
 export default function Auth({ isSigningUp = false }) {
-  const history = useHistory();
+  const history = useHistory('/');
   const { setUser } = useUser();
 
   const handleSubmit = async (email, password) => {
@@ -22,7 +22,7 @@ export default function Auth({ isSigningUp = false }) {
           setUser({id: user.id, email: user.email });
         }
         // If signing up: redirect to /welcome
-        const redirecting = isSigningUp ? '/welcome' : '/profile';
+        const redirecting = isSigningUp ? '/' : '/profile';
         history.replace(redirecting)
       // Use the corresponding functions from `/services/users` for both cases
     } catch (error) {
