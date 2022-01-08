@@ -32,3 +32,14 @@ button {
 .top-nav {
   background-color: black;
 }
+.created {
+  border: solid 2px black;
+  margin: 5px;
+  padding: 25px;
+  width: fit-content;
+  background-color: chocolate;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}

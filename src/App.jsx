@@ -7,6 +7,7 @@ import Auth from './views/Auth/Auth';
 import Home from './views/Home/Home';
 import Profile from './views/Profile/Profile';
 import './App.css';
+import EditProfile from './views/Profile/EditProfile';
 
 export default function App() {
   return (
@@ -24,11 +25,13 @@ export default function App() {
               <Route path="/register">
                 <Auth isSigningUp />
               </Route>
+              <PrivateRoute path="/profile/edit">
+              <EditProfile />
+            </PrivateRoute>
               <PrivateRoute path="/profile">
                 <Profile/>
               </PrivateRoute>
-              {/* <  path="/profile/edit">
-                {/* <EditProfile/> */}
+              
               
             
             </Switch>
