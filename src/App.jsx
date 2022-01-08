@@ -6,14 +6,14 @@ import { UserProvider } from './context/UserContext';
 import Auth from './views/Auth/Auth';
 import Home from './views/Home/Home';
 import Profile from './views/Profile/Profile';
-import styles from './App.css';
+import './App.css';
 
 export default function App() {
   return (
     <UserProvider>
         <Router>
           <Header />
-          <main className={styles.main}>
+          <main className='main'>
             <Switch>
               <Route exact path="/">
                 <Home />

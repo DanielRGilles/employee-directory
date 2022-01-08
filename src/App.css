@@ -5,8 +5,6 @@
   --off-white: rgb(234, 234, 234);
 }
 
-
-
 body {
   background-color: var(--off-white);
   color: var(--gray);
@@ -30,16 +28,7 @@ button {
   padding: 2rem 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
+
 .top-nav {
-  grid-template-columns: 15% 1fr 15%;
-  background-color: crimson;
-  color: cornsilk;
+  background-color: black;
 }
