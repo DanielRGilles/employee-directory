@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {  Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import { UserProvider } from './context/UserContext';
@@ -12,7 +12,7 @@ import EditProfile from './views/Profile/EditProfile';
 export default function App() {
   return (
     <UserProvider>
-        <Router>
+        
           <Header />
           <main className='main'>
             <Switch>
@@ -31,12 +31,9 @@ export default function App() {
               <PrivateRoute path="/profile">
                 <Profile/>
               </PrivateRoute>
-              
-              
-            
             </Switch>
           </main>
-        </Router>
+        
      
     </UserProvider>
   )

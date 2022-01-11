@@ -17,7 +17,7 @@ export default function Header() {
             <div><img className={styles.img}  src={phone} alt='karate kicker'/></div>
             <div>{user?.email ? user.email : 'Friend'}</div></div>
             <div>
-            {user.email ? <button onClick={async () => { await signOutUser();
+            {user?.email ? <button onClick={async () => { await signOutUser();
             setUser({})}} className='auth-btn'>Sign Out</button> : (
                 <Link to="/login" className='auth-btn'>
                   <button>Sign In</button>
