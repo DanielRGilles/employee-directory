@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading component test renders the Loading spinner 1`] = `
+<div>
+  <div>
+    <img
+      alt="loading spinner"
+      src="/path/image"
+    />
+    <h1
+      class="loading"
+    >
+      ......Loading
+    </h1>
+  </div>
+</div>
+`;

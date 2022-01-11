@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component test renders the top nav header 1`] = `
+<div>
+  <header
+    class="headerT"
+  >
+    <div />
+    <div>
+      <h1>
+        Acme Inc. 
+      </h1>
+      <div>
+        <img
+          alt="karate kicker"
+          class="img"
+          src="/path/image"
+        />
+      </div>
+      <div>
+        Friend
+      </div>
+    </div>
+    <div>
+      <a
+        class="auth-btn"
+        href="/login"
+      >
+        <button>
+          Sign In
+        </button>
+      </a>
+    </div>
+  </header>
+</div>
+`;
